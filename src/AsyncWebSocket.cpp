@@ -1053,7 +1053,7 @@ void AsyncWebSocket::textAll(AsyncWebSocketMessageBuffer * buffer){
 
 
 void AsyncWebSocket::textAll(const char * message, size_t len){
-  if (_buffers.length()) return;
+  //if (_buffers.length()) return;
   AsyncWebSocketMessageBuffer * WSBuffer = makeBuffer((uint8_t *)message, len);
     textAll(WSBuffer);
 }
